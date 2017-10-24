@@ -68,7 +68,7 @@ def funRandomUnit():
     screen.blit(imgCenter,(0,100))
     screen.blit(imgBottom,(0,200))
     pygame.display.flip()
-    pygame.image.save(screen, "random.jpeg")
+    pygame.image.save(screen, "random.png")
     return
 done = False
 
