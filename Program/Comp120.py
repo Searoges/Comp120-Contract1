@@ -30,40 +30,10 @@ def funRandomUnit():
     """
     intTopSection = randint(1,4)
     intCenterSection = randint(1,4)
-    intBottomSelection = randint (1,4)
-
-    if (intTopSection == 1):
-        imgTop = pygame.image.load(("T1.png"))
-    elif (intTopSection == 2):
-        imgTop = pygame.image.load(("T2.png"))
-    elif (intTopSection == 3):
-        imgTop = pygame.image.load(("T3.png"))
-    elif (intTopSection == 4):
-        imgTop = pygame.image.load(("T4.png"))
-    else:
-        imgTop = pygame.image.load(("T1.png"))
-
-    if (intCenterSection == 1):
-        imgCenter = pygame.image.load(("M1.png"))
-    elif (intCenterSection == 2):
-        imgCenter = pygame.image.load(("M2.png"))
-    elif (intCenterSection == 3):
-        imgCenter = pygame.image.load(("M3.png"))
-    elif (intCenterSection == 4):
-        imgCenter = pygame.image.load(("M4.png"))
-    else:
-        imgCenter = pygame.image.load(("M1.png"))
-
-    if (intBottomSelection == 1):
-        imgBottom= pygame.image.load(("B1.png"))
-    elif (intBottomSelection == 2):
-        imgBottom = pygame.image.load(("B2.png"))
-    elif (intBottomSelection == 3):
-        imgBottom = pygame.image.load(("B3.png"))
-    elif (intBottomSelection == 4):
-        imgBottom = pygame.image.load(("B4.png"))
-    else:
-        imgBottom = pygame.image.load(("B1.png"))
+    intBottomSection = randint (1,4)
+    imgTop = pygame.image.load(("T" + str(intTopSection) + ".png"))
+    imgCenter = pygame.image.load(("M" + str(intCenterSection) + ".png"))
+    imgBottom = pygame.image.load(("B" + str(intBottomSection) + ".png"))
     screen.blit(imgTop,(0,0))
     screen.blit(imgCenter,(0,100))
     screen.blit(imgBottom,(0,200))
